@@ -49,11 +49,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     die('invalid method');
 }
 
-define('DB_USERNAME', "");
-define('HOST_URL', "");
-define('SCHEMA', "");
-define('DB_PASSWORD', "");
-date_default_timezone_set('America/Bogota');
+define('DB_USERNAME', ""); // Database username
+define('HOST_URL', ""); // URL to the server 
+define('SCHEMA', ""); // database you are triying to connect
+define('DB_PASSWORD', ""); // Password of your username
+date_default_timezone_set('America/Bogota'); // you need to use your own timezone or don´t i´m just a comment not a cop
 ?>
 
 

@@ -1,5 +1,5 @@
 # Back-End-Php
-Php back end with oracle intended for angularjs
+Php back end with oracle intended for angularjs. Works with https://github.com/davidzas/Angular-Ajax-Encrypt
 
 # Installation
 1. Download or clone this repository

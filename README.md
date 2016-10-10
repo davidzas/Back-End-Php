@@ -12,7 +12,6 @@ Php back end with oracle intended for angularjs. Works with https://github.com/d
   define('DB_PASSWORD', "");
   date_default_timezone_set('America/Bogota');
 ```
-
 4. Edit the /classes/Security.php file and add a key:
 ``` php
  $secret_key = 'super aswesome and secure key kappa';

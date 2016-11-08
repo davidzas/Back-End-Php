@@ -1,6 +1,8 @@
 <?php
 
 /*
+MIT License (MIT)
+
 Copyright (c) 2016 David Tobar alias DavidZas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software
@@ -24,13 +26,13 @@ include_once '../classes/Example.php';
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
-    switch ($_POST['metodo']) {
+    switch ($_REQUEST['metodo']) {
         default:
             echo "[]";
             break;
     }
 } else if ($_SERVER['REQUEST_METHOD'] == "GET") {
-    switch ($_GET['metodo']) {
+    switch ($_REQUEST['metodo']) {
         case 'example-method':
             $ex = new Example();
             $data=$ex->test();

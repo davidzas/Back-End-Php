@@ -26,7 +26,7 @@ Within the classes folder there is a Example Class which use the Connection clas
 Gibberish AES https://github.com/ivantcholakov/gibberish-aes-php
 
 # Licence
-Copyright (c) 2016 David Tobar alias DavidZas
+Copyright (c) 2016 David Tobar aka DavidZas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 and associated documentation files (the "Software"), to deal in the Software without restriction,

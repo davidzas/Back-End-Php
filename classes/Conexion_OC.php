@@ -75,9 +75,12 @@ class Conexion_OC {
         }
     }
 
-    public function select($sql) {
+     public function select($sql,$params=array()) {
         $this->conectar();
         $stid = oci_parse($this->con, $sql);
+        foreach ($params as $p) {
+            oci_bind_by_name($stid, $p['name'], $p['value'], $p['length']);
+        }
         $rta = array();
         oci_execute($stid);
         while (($row = oci_fetch_array($stid, OCI_ASSOC)) != false) {
@@ -87,7 +90,7 @@ class Conexion_OC {
         if (oci_error()) {
             print_r(oci_error());
         }
-        
+
 
         return $rta;
     }
